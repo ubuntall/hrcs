@@ -28,19 +28,20 @@ def msg2db(CreateTime, actualNickName, NickName, text):
 
 msg_set = set()
 
+keyWords = ["平", "万", "售", "一口价", "产权", "满", "房", "奖", "店", "1"]
+
 
 @itchat.msg_register(TEXT, isGroupChat=True)
 def text_reply(msg):
-    keyWords = ["平", "万", "售", "一口价", "产权", "满", "房", "奖", "店", "1"]
-    n = 0
-    for k in keyWords:
-        if k in msg.text:
-            n = n + 1
+    if msg.text not in msg_set:
+        msg_set.add(msg.text)
+        n = 0
+        for k in keyWords:
+            if k in msg.text:
+                n = n + 1
 
-    if n > len(keyWords) / 2:
-        if msg.text not in msg_set:
+        if n > len(keyWords) / 2:
             try:
-                msg_set.add(msg.text)
                 Msg.objects.get(text=msg.text)
             except Msg.DoesNotExist:
                 # print(msg)

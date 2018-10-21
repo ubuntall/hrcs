@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'notification_api',
     'msg2db.apps.Msg2DbConfig',
     'django.contrib.admin',
     'django.contrib.auth',

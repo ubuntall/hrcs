@@ -28,6 +28,7 @@ class MsgAdmin(admin.ModelAdmin):
     # 搜索功能及能实现搜索的字段
     search_fields = ('actualNickName', 'nickName', 'text')
 
+
     # def has_add_permission(self, request):
     #     return False
     #

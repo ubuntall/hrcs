@@ -31,7 +31,13 @@ msg_set = set()
 
 @itchat.msg_register(TEXT, isGroupChat=True)
 def text_reply(msg):
-    if "平" in msg.text and "万" in msg.text:
+    keyWords = ["平", "万", "售", "一口价", "产权", "满", "房", "奖", "店", "1"]
+    n = 0
+    for k in keyWords:
+        if k in msg.text:
+            n = n + 1
+
+    if n > len(keyWords) / 2:
         if msg.text not in msg_set:
             try:
                 msg_set.add(msg.text)

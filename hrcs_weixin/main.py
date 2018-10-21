@@ -31,12 +31,12 @@ msg_set = set()
 
 @itchat.msg_register(TEXT, isGroupChat=True)
 def text_reply(msg):
-    if '平' in msg.text and '万' in msg.text:
+    if "平" in msg.text and "万" in msg.text:
         if msg.text not in msg_set:
             try:
+                msg_set.add(msg.text)
                 Msg.objects.get(text=msg.text)
             except Msg.DoesNotExist:
-                msg_set.add(msg.text)
                 # print(msg)
                 print(msg.CreateTime)
                 print(msg.actualNickName)

@@ -33,13 +33,16 @@ msg_set = set()
 def text_reply(msg):
     if '平' in msg.text and '万' in msg.text:
         if msg.text not in msg_set:
-            msg_set.add(msg.text)
-            # print(msg)
-            print(msg.CreateTime)
-            print(msg.actualNickName)
-            print(msg.User.NickName)
-            print(msg.text)
-            msg2db(msg.CreateTime, msg.actualNickName, msg.User.NickName, msg.text)
+            try:
+                Msg.objects.get(text=msg.text)
+            except Msg.DoesNotExist:
+                msg_set.add(msg.text)
+                # print(msg)
+                print(msg.CreateTime)
+                print(msg.actualNickName)
+                print(msg.User.NickName)
+                print(msg.text)
+                msg2db(msg.CreateTime, msg.actualNickName, msg.User.NickName, msg.text)
 
 
 itchat.auto_login(True)

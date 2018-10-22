@@ -16,15 +16,15 @@
 <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
 <script type="text/javascript">
     var i=0; //声明轮询次数变量
-    temp=0
+    temp=0;
     $.get('http://127.0.0.1:8000/notification_api/', function(data){
-        temp=data["id"]
-        console.log("in get temp=");
-        console.log(temp);
+        temp=data["id"];
+        console.log("in get temp=",temp);
+        //console.log(temp);
     });
 
     $(document).ready(function(){
-        c = window.setInterval("getResult()",5000); //间隔多少秒去触发ajax
+        c = window.setInterval("getResult()",3000); //间隔多少秒去触发ajax
     });
  
     function getResult(){
@@ -35,11 +35,11 @@
             async: true,
             success:function(data){
                 i++; //记录轮询的次数
-                console.log("in ajax id=");
-                console.log(data["id"]);
+                console.log("in ajax id=",data["id"]);
+                //console.log(data["id"]);
                 if(data["id"] != temp){ //处理自己的业务
-                    temp=data["id"]
-                    notification_pop()
+                    temp=data["id"];
+                    notification_pop();
                 }
                 //设置轮询了多少次停止轮询
                 if(i>99999){
@@ -55,9 +55,13 @@
         var n = new Notification('新房源提醒',{
             body: '有新房源出现，点击查看',
             data: {
-                icon:'http://pics.sc.chinaz.com/Files/pic/icons128/5001/11.png',
-                url: 'http://127.0.0.1:8000/admin/msg2db/msg/'
-            }
+                url: 'http://127.0.0.1:8000/admin/msg2db/msg/',
+            },
+            icon: 'http://pics.sc.chinaz.com/Files/pic/icons128/5001/1.png',
+            vibrate:[200],
+            renotify:true,
+            silent:true,
+            sticky:true,
         });
 
         n.onclick = function(){
@@ -65,8 +69,6 @@
             javascript:location.reload();//刷新当前窗户，以呈现新房源
             n.close();// 并且关闭通知
         };
-
-        i++;
     }
 
     if(Notification.permission === 'granted'){
@@ -82,7 +84,7 @@
             else if(permission === 'denied'){
                 console.log('用户拒绝通知');
             }
-        })
+        });
     };
 
 </script>

@@ -24,10 +24,9 @@ class MsgAdmin(admin.ModelAdmin):
     # fk_fields 设置显示外键字段
     # fk_fields = ()
     # 过滤器功能及能过滤的字段
-    # list_filter = ('actualNickName', 'nickName')
+    # list_filter = ('actualNickName',)
     # 搜索功能及能实现搜索的字段
     search_fields = ('actualNickName', 'nickName', 'text')
-
 
     # def has_add_permission(self, request):
     #     return False

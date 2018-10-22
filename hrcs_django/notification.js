@@ -35,7 +35,6 @@
     }
 
 
-
     function notification_pop(){
         var n = new Notification('新房源提醒',{
             body: '有新房源出现，点击查看',
@@ -50,9 +49,15 @@
         });
 
         n.onclick = function(){
-            //window.location.href(n.data.url, 'http://127.0.0.1:8000/admin/msg2db/msg/');// 打开网址
-            javascript:location.reload();//刷新当前窗户，以呈现新房源
-            n.close();// 并且关闭通知
+            var url = window.location.href;
+            console.log("url=",url);
+            if (url=='http://127.0.0.1:8000/admin/msg2db/msg/'){
+                window.location.reload();//重新载入当前窗户，以呈现新房源
+            }else{
+                console.log("n.data.url=",n.data.url);
+                window.open(n.data.url);// 新窗口打开网址
+            }
+            n.close();// 关闭通知
         };
     }
 

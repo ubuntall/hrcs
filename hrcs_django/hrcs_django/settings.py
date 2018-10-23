@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ["192.168.31.199", "192.168.31.1", "127.0.0.1", "22465rj114.iask
 INSTALLED_APPS = [
     'werkzeug_debugger_runserver',
     'django_extensions',
-    'sslserver',
+    # 'sslserver',
     'notification_api',
     'msg2db.apps.Msg2DbConfig',
     'django.contrib.admin',

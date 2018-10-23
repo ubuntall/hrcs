@@ -10,7 +10,7 @@ class MsgAdmin(admin.ModelAdmin):
     # list_display = ('text', 'actualNickName', 'createTime', 'nickName')
     list_display = ('text',)
     # list_per_page设置每页显示多少条记录，默认是100条
-    list_per_page = 10
+    list_per_page = 5
     # ordering设置默认排序字段，负号表示降序排序
     ordering = ('-createTime',)
     # 操作项功能显示位置设置，两个都为True则顶部和底部都显示

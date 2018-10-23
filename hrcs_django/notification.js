@@ -2,7 +2,7 @@
 <script type="text/javascript">
     var i=0; //声明轮询次数变量
     temp=0;
-    $.get('http://127.0.0.1:8000/notification_api/', function(data){
+    $.get('http://22465rj114.iask.in/notification_api/', function(data){
         temp=data["id"];
         console.log("in get temp=",temp);
         //console.log(temp);
@@ -15,7 +15,7 @@
     function getResult(){
         jQuery.ajax({
             type:'get',
-            url:'http://127.0.0.1:8000/notification_api/',
+            url:'http://22465rj114.iask.in/notification_api/',
             dataType:'json',
             async: true,
             success:function(data){
@@ -34,12 +34,11 @@
         });
     }
 
-
     function notification_pop(){
         var n = new Notification('新房源提醒',{
             body: '有新房源出现，点击查看',
             data: {
-                url: 'http://127.0.0.1:8000/admin/msg2db/msg/',
+                url: 'http://22465rj114.iask.in/admin/msg2db/msg/',
             },
             icon: 'http://pics.sc.chinaz.com/Files/pic/icons128/5001/1.png',
             tag:"tag",
@@ -51,7 +50,7 @@
         n.onclick = function(){
             var url = window.location.href;
             console.log("url=",url);
-            if (url=='http://127.0.0.1:8000/admin/msg2db/msg/'){
+            if (url=='http://22465rj114.iask.in/admin/msg2db/msg/'){
                 window.location.reload();//重新载入当前窗户，以呈现新房源
             }else{
                 console.log("n.data.url=",n.data.url);
@@ -76,5 +75,4 @@
             }
         });
     };
-
 </script>

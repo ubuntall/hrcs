@@ -7,7 +7,8 @@ from .models import Msg
 @admin.register(Msg)
 class MsgAdmin(admin.ModelAdmin):
     # listdisplay设置要显示在列表中的字段（id字段是Django模型的默认主键）
-    list_display = ('createTime', 'actualNickName', 'nickName', 'text')
+    # list_display = ('text', 'actualNickName', 'createTime', 'nickName')
+    list_display = ('text',)
     # list_per_page设置每页显示多少条记录，默认是100条
     list_per_page = 10
     # ordering设置默认排序字段，负号表示降序排序
@@ -26,7 +27,8 @@ class MsgAdmin(admin.ModelAdmin):
     # 过滤器功能及能过滤的字段
     # list_filter = ('actualNickName',)
     # 搜索功能及能实现搜索的字段
-    search_fields = ('actualNickName', 'nickName', 'text')
+    # search_fields = ('actualNickName', 'nickName', 'text')
+    search_fields = ('text', 'actualNickName')
 
     # def has_add_permission(self, request):
     #     return False

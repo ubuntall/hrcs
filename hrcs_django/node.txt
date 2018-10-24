@@ -1,0 +1,5 @@
+python manage.py runserver 0.0.0.0:8000
+https://22465rj114.iask.in/admin/login/
+http://22465rj114.iask.in/admin/login/
+chrome://settings/content/notifications
+python manage.py collectstatic

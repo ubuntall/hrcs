@@ -20,4 +20,5 @@ urlpatterns = [
     path('notification_api/', include('notification_api.urls')),
     path('msg2db/', include('msg2db.urls')),
     path('admin/', admin.site.urls),
+    path('', admin.site.urls),
 ]

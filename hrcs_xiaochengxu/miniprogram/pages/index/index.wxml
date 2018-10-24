@@ -1,0 +1,9 @@
+<div class="div">
+  <tr class="tr">
+    <th class="th">
+      <view>{{data.actualNickName}}</view>
+      <view>{{data.nickName}}</view>
+      <view>{{data.text}}</view>
+    </th>
+  </tr>  
+</div>

@@ -1,16 +1,15 @@
-"""
-WSGI config for hrcs_django project.
-
-It exposes the WSGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/2.1/howto/deployment/wsgi/
-"""
-
 import os
+import django.core.handlers.wsgi
+import sys
+import django
 
+sys.path.append('D:\Workspace\hrcs\hrcs_django')
+sys.path.append('D:\Workspace\hrcs\hrcs_django\hrcs_django')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "hrcs_django.settings")
+import os
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hrcs_django.settings')
 
 application = get_wsgi_application()
+django.setup()

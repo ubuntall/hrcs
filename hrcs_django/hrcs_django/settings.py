@@ -29,6 +29,7 @@ ALLOWED_HOSTS = ["192.168.31.199", "192.168.31.1", "127.0.0.1", "22465rj114.iask
 # Application definition
 
 INSTALLED_APPS = [
+    # 'channels',
     'werkzeug_debugger_runserver',
     'django_extensions',
     # 'sslserver',
@@ -117,7 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = 'D:\Workspace\hrcs\hrcs_django\static'
+STATIC_ROOT = 'D:\Workspace\hrcs\hrcs_django\static'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),

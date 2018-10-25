@@ -16,14 +16,14 @@ from itchat.content import *
 from msg2db.models import Msg
 
 
-def msg2db(CreateTime, actualNickName, NickName, text):
+def msg2db(msg_to_db):
     msg = Msg()
-    msg.createTime = CreateTime
-    msg.actualNickName = actualNickName
-    msg.nickName = NickName
-    msg.text = text
+    msg.createTime = msg_to_db.CreateTime
+    msg.actualNickName = msg_to_db.actualNickName
+    msg.nickName = msg_to_db.NickName
+    msg.text = msg_to_db.text
     msg.save()
-    pass
+    print("msg2db() Susscess")
 
 
 msg_set = set()
@@ -50,7 +50,7 @@ def text_reply(msg):
                 print(msg.actualNickName)
                 print(msg.User.NickName)
                 print(msg.text)
-                msg2db(msg.CreateTime, msg.actualNickName, msg.User.NickName, msg.text)
+                msg2db(msg)
 
 
 itchat.auto_login(True)

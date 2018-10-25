@@ -33,6 +33,7 @@ keyWords = ["平", "万", "售", "一口价", "产权", "满", "房", "奖", "�
 
 @itchat.msg_register(TEXT, isGroupChat=True)
 def text_reply(msg):
+    msg.text = msg.text.strip()
     if msg.text not in msg_set:
         msg_set.add(msg.text)
         n = 0

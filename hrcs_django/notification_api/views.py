@@ -1,6 +1,6 @@
-from django.shortcuts import render
 import os
 import sys
+
 import django
 
 dir = os.path.dirname(os.path.abspath(__file__))

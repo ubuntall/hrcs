@@ -1,6 +1,6 @@
 import os
-import django.core.handlers.wsgi
 import sys
+
 import django
 
 sys.path.append('D:\Workspace\hrcs\hrcs_django')

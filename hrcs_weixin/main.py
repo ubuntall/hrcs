@@ -1,5 +1,6 @@
 import os
 import sys
+
 import django
 
 dir = os.path.dirname(os.path.abspath(__file__))
@@ -20,7 +21,7 @@ def msg2db(msg_to_db):
     msg = Msg()
     msg.createTime = msg_to_db.CreateTime
     msg.actualNickName = msg_to_db.actualNickName
-    msg.nickName = msg_to_db.NickName
+    msg.nickName = msg_to_db.User.NickName
     msg.text = msg_to_db.text
     msg.save()
     print("msg2db() Susscess")

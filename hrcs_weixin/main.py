@@ -12,8 +12,8 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", settings_path)
 django.setup()
 
 import itchat
+import Levenshtein
 from itchat.content import *
-
 from msg2db.models import Msg
 
 
@@ -44,7 +44,22 @@ def text_reply(msg):
 
         if n > len(keyWords) / 2:
             try:
+                # Msg.objects.get(text=msg.text)
+                msgss = Msg.objects.filter(actualNickName=msg.actualNickName)
+                # print(msgss)
+                n = 0
+                for msgs in msgss:
+                    distance = Levenshtein.distance(msgs.text, msg.text)
+                    print("distance = " + str(distance))
+                    if distance < 5 and distance > 0:
+                        msgs.delete()
+                    if distance == 0:
+                        n = n + 1
+                        if n > 1:
+                            msgs.delete()
                 Msg.objects.get(text=msg.text)
+
+
             except Msg.DoesNotExist:
                 # print(msg)
                 print(msg.CreateTime)

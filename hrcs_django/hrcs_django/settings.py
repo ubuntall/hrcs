@@ -29,12 +29,13 @@ ALLOWED_HOSTS = ["192.168.31.199", "192.168.31.1", "127.0.0.1", "22465rj114.iask
 # Application definition
 
 INSTALLED_APPS = [
-    # 'channels',
+    'chat',
+    'channels',
     'werkzeug_debugger_runserver',
     'django_extensions',
     # 'sslserver',
     'notification_api',
-    'msg2db.apps.Msg2DbConfig',
+    'msg2db',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,5 +125,19 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     'D:\Workspace\hrcs\hrcs_django\static',
 ]
+
+# Channels
+ASGI_APPLICATION = 'hrcs_django.routing.application'
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "asgi_redis.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [os.environ.get('REDIS_URL', 'redis://127.0.0.1:6379/2')],
+        },
+        # 配置路由的路径
+        "ROUTING": "hrcs_django.routing.channel_routing",
+    },
+}
 
 # SECURE_SSL_REDIRECT = True

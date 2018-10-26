@@ -24,7 +24,7 @@ def msg2db(msg_to_db):
     msg.nickName = msg_to_db.User.NickName
     msg.text = msg_to_db.text
     msg.save()
-    print("msg2db() Susscess")
+    print("新增了一条数据")
 
 
 msg_set = set()
@@ -45,28 +45,31 @@ def text_reply(msg):
         if n > len(keyWords) / 2:
             try:
                 Msg.objects.get(text=msg.text)
+                print("查询到了一条数据")
 
             except Msg.DoesNotExist:
                 # print(msg)
+                print("-----------------")
                 print(msg.CreateTime)
                 print(msg.actualNickName)
                 print(msg.User.NickName)
                 print(msg.text)
 
-                print("-----------------")
                 msgss = Msg.objects.filter(actualNickName=msg.actualNickName)
                 # print(msgss)
                 n = 0
                 for msgs in msgss:
                     distance = Levenshtein.distance(msgs.text, msg.text)
                     print("distance = " + str(distance))
-                    if distance < 30 and distance > 0:
+                    if distance < 35 and distance > 0:
                         if n == 0:
                             msgs.text = msg.text
                             msgs.save()
                             n = n + 1
+                            print("修改了一条数据")
                         else:
                             msgs.delete()
+                            print("删除了一条数据")
 
                 if n == 0:
                     msg2db(msg)

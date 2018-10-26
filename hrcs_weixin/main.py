@@ -52,7 +52,7 @@ def text_reply(msg):
                 for msgs in msgss:
                     distance = Levenshtein.distance(msgs.text, msg.text)
                     print("distance = " + str(distance))
-                    if distance < 30 and distance > 0:
+                    if distance < 35 and distance > 0:
                         msgs.delete()
                     if distance == 0:
                         n = n + 1

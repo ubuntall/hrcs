@@ -52,8 +52,8 @@ def text_reply(msg):
                 print(msg.actualNickName)
                 print(msg.User.NickName)
                 print(msg.text)
-                msg2db(msg)
 
+                print("-----------------")
                 msgss = Msg.objects.filter(actualNickName=msg.actualNickName)
                 # print(msgss)
                 n = 0
@@ -61,11 +61,15 @@ def text_reply(msg):
                     distance = Levenshtein.distance(msgs.text, msg.text)
                     print("distance = " + str(distance))
                     if distance < 30 and distance > 0:
-                        msgs.delete()
-                    if distance == 0:
-                        n = n + 1
-                        if n > 1:
+                        if n == 0:
+                            msgs.text = msg.text
+                            msgs.save()
+                            n = n + 1
+                        else:
                             msgs.delete()
+
+                if n == 0:
+                    msg2db(msg)
 
 
 itchat.auto_login(True)

@@ -43,13 +43,13 @@ def text_reply(msg):
                 n = n + 1
 
         if n > len(keyWords) / 2:
+            print("-----------------")
             try:
                 Msg.objects.get(text=msg.text)
                 print("查询到了一条数据")
 
             except Msg.DoesNotExist:
                 # print(msg)
-                # print("-----------------")
                 # print(msg.CreateTime)
                 # print(msg.actualNickName)
                 # print(msg.User.NickName)
@@ -61,7 +61,7 @@ def text_reply(msg):
                 for msgs in msgss:
                     distance = Levenshtein.distance(msgs.text.strip(), msg.text)
                     print("distance = " + str(distance))
-                    if distance < 40 and distance >= 0:
+                    if distance < 65 and distance >= 0:
                         if n == 0:
                             msgs.text = msg.text
                             msgs.save()

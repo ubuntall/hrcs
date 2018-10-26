@@ -48,10 +48,11 @@ def text_reply(msg):
                 msgss = Msg.objects.filter(actualNickName=msg.actualNickName)
                 # print(msgss)
                 n = 0
+                print("-----------------")
                 for msgs in msgss:
                     distance = Levenshtein.distance(msgs.text, msg.text)
                     print("distance = " + str(distance))
-                    if distance < 5 and distance > 0:
+                    if distance < 30 and distance > 0:
                         msgs.delete()
                     if distance == 0:
                         n = n + 1

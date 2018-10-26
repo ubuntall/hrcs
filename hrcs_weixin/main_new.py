@@ -49,19 +49,19 @@ def text_reply(msg):
 
             except Msg.DoesNotExist:
                 # print(msg)
-                print("-----------------")
-                print(msg.CreateTime)
-                print(msg.actualNickName)
-                print(msg.User.NickName)
-                print(msg.text)
+                # print("-----------------")
+                # print(msg.CreateTime)
+                # print(msg.actualNickName)
+                # print(msg.User.NickName)
+                # print(msg.text)
 
                 msgss = Msg.objects.filter(actualNickName=msg.actualNickName)
                 # print(msgss)
                 n = 0
                 for msgs in msgss:
-                    distance = Levenshtein.distance(msgs.text, msg.text)
+                    distance = Levenshtein.distance(msgs.text.strip(), msg.text)
                     print("distance = " + str(distance))
-                    if distance < 35 and distance > 0:
+                    if distance < 40 and distance >= 0:
                         if n == 0:
                             msgs.text = msg.text
                             msgs.save()

@@ -40,14 +40,14 @@ keyWords = ["平", "万", "售", "价", "权", "满", "房", "奖", "店", "1"]
 @itchat.msg_register(TEXT, isGroupChat=True)
 def text_reply(msg):
     msg.text = msg.text.strip()
-    if msg.text not in msg_set:
+    if msg.text not in msg_set and len(msg.text) < 300:
         msg_set.add(msg.text)
         n = 0
         for k in keyWords:
             if k in msg.text:
                 n = n + 1
 
-        if n >= len(keyWords) / 2 and len(msg.text) < 300:
+        if n >= len(keyWords) / 2:
             print("-----------------")
             try:
                 Msg.objects.get(text=msg.text)

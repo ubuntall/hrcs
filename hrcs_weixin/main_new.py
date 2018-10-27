@@ -2,6 +2,7 @@ import os
 import sys
 
 import django
+import time
 
 dir = os.path.dirname(os.path.abspath(__file__))
 dir = os.path.join('D:\Workspace\hrcs', 'hrcs_django')
@@ -29,7 +30,7 @@ def msg2db(msg_to_db):
 
 msg_set = set()
 
-keyWords = ["平", "万", "售", "一口价", "产权", "满", "房", "奖", "店", "1"]
+keyWords = ["平", "万", "售", "价", "权", "满", "房", "奖", "店", "1"]
 
 
 @itchat.msg_register(TEXT, isGroupChat=True)
@@ -42,7 +43,7 @@ def text_reply(msg):
             if k in msg.text:
                 n = n + 1
 
-        if n > len(keyWords) / 2:
+        if n >= len(keyWords) / 2:
             print("-----------------")
             try:
                 Msg.objects.get(text=msg.text)
@@ -74,6 +75,11 @@ def text_reply(msg):
                 if n == 0:
                     msg2db(msg)
 
-
-itchat.auto_login(True)
-itchat.run(True)
+try:
+    itchat.auto_login(True)
+    itchat.run(True)
+except:
+    while True:
+        itchat.auto_login(True)
+        itchat.run(True)
+        time.sleep(30)

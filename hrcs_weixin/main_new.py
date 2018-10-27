@@ -1,8 +1,8 @@
 import os
 import sys
+import time
 
 import django
-import time
 
 dir = os.path.dirname(os.path.abspath(__file__))
 dir = os.path.join('D:\Workspace\hrcs', 'hrcs_django')
@@ -29,6 +29,10 @@ def msg2db(msg_to_db):
 
 
 msg_set = set()
+msgss = Msg.objects.all()
+for msgs in msgss:
+    msg_set.add(msgs.text)
+print("len(msg_set) = " + str(len(msg_set)))
 
 keyWords = ["平", "万", "售", "价", "权", "满", "房", "奖", "店", "1"]
 
@@ -43,11 +47,12 @@ def text_reply(msg):
             if k in msg.text:
                 n = n + 1
 
-        if n >= len(keyWords) / 2:
+        if n >= len(keyWords) / 2 and len(msg.text) < 300:
             print("-----------------")
             try:
                 Msg.objects.get(text=msg.text)
                 print("查询到了一条数据")
+                print("len(msg.text) = " + str(len(msg.text)))
 
             except Msg.DoesNotExist:
                 # print(msg)
@@ -74,6 +79,7 @@ def text_reply(msg):
 
                 if n == 0:
                     msg2db(msg)
+
 
 try:
     itchat.auto_login(True)

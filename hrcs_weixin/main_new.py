@@ -34,11 +34,27 @@ for msgs in msgss:
     msg_set.add(msgs.text)
 print("len(msg_set) = " + str(len(msg_set)))
 
+# n = 0
+# for msgs in msgss:
+#     for msgz in msgss:
+#         try:
+#             distance = Levenshtein.distance(msgs.text.strip(), msgz.text.strip())
+#             if distance < 65 and distance >= 0:
+#                 if n == 0:
+#                     n = n + 1
+#                 else:
+#                     msgz.delete()
+#                     print("删除了一条重复数据")
+#         except:
+#             pass
+#     n = 0
+
 keyWords = ["平", "万", "售", "价", "权", "满", "房", "奖", "店", "1"]
 
 
 @itchat.msg_register(TEXT, isGroupChat=True)
 def text_reply(msg):
+    global msgss
     msg.text = msg.text.strip()
     if msg.text not in msg_set and len(msg.text) < 300:
         msg_set.add(msg.text)
@@ -61,7 +77,7 @@ def text_reply(msg):
                 # print(msg.User.NickName)
                 # print(msg.text)
 
-                msgss = Msg.objects.filter(actualNickName=msg.actualNickName)
+                # msgss = Msg.objects.filter(actualNickName=msg.actualNickName)
                 # print(msgss)
                 n = 0
                 for msgs in msgss:
@@ -79,6 +95,7 @@ def text_reply(msg):
 
                 if n == 0:
                     msg2db(msg)
+                msgss = Msg.objects.all()
 
 
 try:

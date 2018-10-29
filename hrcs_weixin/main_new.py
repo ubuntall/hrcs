@@ -85,7 +85,7 @@ def text_reply(msg):
                     distance = Levenshtein.distance(msgs.text.strip(), msg.text)
                     if distance < distance_min:
                         distance_min = distance
-                    if distance < 50 and distance >= 0:
+                    if distance < 60 and distance >= 0:
                         if n == 0:
                             msgs.text = msg.text
                             msgs.save()
@@ -102,11 +102,9 @@ def text_reply(msg):
                 msgss = Msg.objects.all()
 
 
-try:
-    itchat.auto_login(True)
-    itchat.run(True)
-except:
-    while True:
+while True:
+    try:
         itchat.auto_login(True)
         itchat.run(True)
+    except:
         time.sleep(30)

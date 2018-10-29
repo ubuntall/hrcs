@@ -16,6 +16,7 @@ import itchat
 import Levenshtein
 from itchat.content import *
 from msg2db.models import Msg
+from bwebsocket import send_last_msg
 
 
 def msg2db(msg_to_db):
@@ -26,6 +27,7 @@ def msg2db(msg_to_db):
     msg.text = msg_to_db.text
     msg.save()
     print("新增了一条数据")
+    send_last_msg()
 
 
 msg_set = set()

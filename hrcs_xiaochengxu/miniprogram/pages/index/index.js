@@ -1,71 +1,62 @@
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    url: 'https://22465rj114.iask.in/notification_api/'
+    isConnect: null,
   },
-  onLoad: function(options) {
-    var that=this;
-    // options.url ? this.setData({
-    //   url: options.url
-    // }) : wx.navigateBack({
-    //   delta: 2
-    // });
-    
-    wx.request({
-      url: 'https://22465rj114.iask.in/notification_api/',
-      method: 'get',
-      success: function(res) {
-        console.log(res)
-        that.setData({ 
-          data:res.data,
-        })
+
+  startClick: function(even) {
+    wx.connectSocket({
+      url: 'ws://127.0.0.1/',
+      method: 'GET',
+      success: function() {
+        isConnect: true
+        console.log("连接成功...")
       },
       fail: function() {
-
-      },
-      complete: function() {
-
+        isConnect: false
+        console.log("连接失败...")
       }
+    });
+
+    wx.onSocketOpen(function(res) {
+      console.log('WebSocket连接已打开！')
+    });
+
+    wx.onSocketError(function(res) {
+      console.log('WebSocket连接打开失败，请检查！')
+      console.log(res)
     })
+  },
 
-    var timer=setInterval(function(){
-      wx.request({
-        url: 'https://22465rj114.iask.in/notification_api/',
-        method: 'get',
-        success: function (res) {
-          console.log(res)
-          that.setData({
-            data: res.data,
-          })
-        },
-        fail: function () {
+  sendClick: function(even) {
+    wx.sendSocketMessage({
+      data: "微信小程序 web socket"
+    })
+  },
 
-        },
-        complete: function () {
+  closeClick: function(even) {
+    wx.closeSocket({
+      success: function() {
+        console.log("关闭成功...")
+      },
+      fail: function() {
+        console.log("关闭失败...")
+      }
+    });
+    wx.onSocketClose(function(res) {
+      console.log("WebSocket连接已关闭")
+    })
+  },
 
-        }
-      })
-    }
-      ,3000)
-  },
-  showInput: function () {
-    this.setData({
-      inputShowed: true
-    });
-  },
-  hideInput: function () {
-    this.setData({
-      inputVal: "",
-      inputShowed: false
-    });
-  },
-  clearInput: function () {
-    this.setData({
-      inputVal: ""
-    });
-  },
-  inputTyping: function (e) {
-    this.setData({
-      inputVal: e.detail.value
-    });
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function(options) {
+    wx.onSocketMessage(function(res) {
+      console.log(res.data)
+    })
   }
-});
+})

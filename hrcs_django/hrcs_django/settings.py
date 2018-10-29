@@ -52,8 +52,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'dwebsocket.middleware.WebSocketMiddleware',
 ]
-
+WEBSOCKET_ACCEPT_ALL = True
 ROOT_URLCONF = 'hrcs_django.urls'
 
 TEMPLATES = [

@@ -80,9 +80,11 @@ def text_reply(msg):
                 # msgss = Msg.objects.filter(actualNickName=msg.actualNickName)
                 # print(msgss)
                 n = 0
+                distance_min = 299
                 for msgs in msgss:
                     distance = Levenshtein.distance(msgs.text.strip(), msg.text)
-                    print("distance = " + str(distance))
+                    if distance < distance_min:
+                        distance_min = distance
                     if distance < 50 and distance >= 0:
                         if n == 0:
                             msgs.text = msg.text
@@ -92,6 +94,8 @@ def text_reply(msg):
                         else:
                             msgs.delete()
                             print("删除了一条数据")
+                if distance_min < 299:
+                    print("distance_min = " + str(distance_min))
 
                 if n == 0:
                     msg2db(msg)

@@ -1,3 +1,0 @@
-<button bindtap='startClick'>连接</button>
-<button bindtap='sendClick'>发送</button>
-<button bindtap='closeClick'>断开</button>

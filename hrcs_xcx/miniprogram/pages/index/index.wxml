@@ -1,0 +1,14 @@
+<scroll-view class="scroll">
+  <view class="classname"></view>
+  <block wx:for="{{msg_list}}" wx:key="*this">
+    <view>
+      <text class="item" data-index="{{index}}" white-space:pre-wrap selectable="true">
+      <!-- {{item.id}}
+      {{item.actualNickName}}
+      {{item.nickName}} -->
+      {{item.text}}
+      </text>
+    </view>
+    <view class='line'></view>
+  </block>
+</scroll-view>

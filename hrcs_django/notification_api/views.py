@@ -32,5 +32,5 @@ class LazyEncoder(DjangoJSONEncoder):
 
 
 def get_five(request):
-    json_data = serialize('json', Msg.objects.all()[:5], cls=LazyEncoder)
+    json_data = serialize('json', Msg.objects.all().order_by('-id')[:5], cls=LazyEncoder)
     return HttpResponse(json.dumps(json_data), content_type="application/json")

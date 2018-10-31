@@ -6,7 +6,7 @@
       <!-- {{item.id}}
       {{item.actualNickName}}
       {{item.nickName}} -->
-      {{item.text}}
+      {{item.pk}}
       </text>
     </view>
     <view class='line'></view>

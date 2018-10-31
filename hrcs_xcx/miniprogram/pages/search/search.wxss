@@ -1,4 +1,3 @@
-/**index.wxss**/
 @import "../../wxSearchView/wxSearchView.wxss";
 
 page {

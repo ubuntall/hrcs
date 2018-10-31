@@ -2,6 +2,7 @@ import os
 import sys
 
 import django
+from django.db.models import Q
 
 dir = os.path.dirname(os.path.abspath(__file__))
 dir = os.path.join('D:\Workspace\hrcs', 'hrcs_django')
@@ -32,5 +33,12 @@ class LazyEncoder(DjangoJSONEncoder):
 
 
 def get_five(request):
-    json_data = serialize('json', Msg.objects.all().order_by('-id')[:5], cls=LazyEncoder)
+    # json_data = serialize('json', Msg.objects.all().order_by('-id')[:5], cls=LazyEncoder)
+    json_data = serialize('json', Msg.objects.all().order_by('-id')[:5])
+    return HttpResponse(json.dumps(json_data), content_type="application/json")
+
+
+def get_so(request):
+    keyword = request.GET.get("keyword")
+    json_data = serialize('json', Msg.objects.filter(Q(text__contains=keyword) | Q(actualNickName__contains=keyword)))
     return HttpResponse(json.dumps(json_data), content_type="application/json")

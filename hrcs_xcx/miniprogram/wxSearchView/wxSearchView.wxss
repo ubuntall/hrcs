@@ -1,4 +1,8 @@
 /** 整个区域 */
+.weui-search-bar{
+  position: fixed;
+}
+
 .wxSearch{
   position: absolute;
   top: 43px;

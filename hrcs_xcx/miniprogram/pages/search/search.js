@@ -17,6 +17,16 @@ Page({
       that.myGobackFunction //提供一个返回回调函数
     );
 
+    var json_array = [{
+      "fields": {
+        "text": "正在搜索数据..."
+      }
+    }, ];
+
+    that.setData({
+      msg_list: json_array
+    })
+
     wx.request({
       url: 'https://22465rj114.iask.in/notification_api/get_so/',
       data: {
@@ -26,9 +36,22 @@ Page({
       success: function(res) {
         var json_array = JSON.parse(res.data).reverse()
         console.log(json_array)
-        that.setData({
-          msg_list: json_array
-        })
+        if (json_array.length > 0) {
+          that.setData({
+            msg_list: json_array
+          })
+        } else if (json_array.length == 0) {
+          json_array = [{
+              "fields": {
+                "text": "没有搜索到相关数据"
+              }
+            }, ],
+            that.setData({
+              msg_list: json_array
+            })
+
+        }
+
       },
       fail: function() {
 

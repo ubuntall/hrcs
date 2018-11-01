@@ -62,9 +62,9 @@ Page({
             that.setData({
               msg_list: json_array
             })
-            wx.playBackgroundAudio({
-              dataUrl: 'http://m3.13400.com:9888/v2013/smso.mp3',
-            })
+            // wx.playBackgroundAudio({
+            //   dataUrl: 'http://m3.13400.com:9888/v2013/smso.mp3',
+            // })
 
           }
 
@@ -76,7 +76,7 @@ Page({
 
         }
       })
-    }, 1000 * 5)
+    }, 1000 * 60)
   },
 
   // 3 转发函数，固定部分，直接拷贝即可

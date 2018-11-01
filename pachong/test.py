@@ -14,4 +14,6 @@ for i in range(0, nrows):
     value = sheet.cell(i, 0)
     list.append(value)
 
-print(list.__str__().replace("text:", ""))
+list = list.__str__().replace("text:", "").replace("'", "").replace("]", "").replace("[", "").replace(",", "").split()
+list = sorted(list, key=lambda x: len(x))
+print(list)

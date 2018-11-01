@@ -34,7 +34,7 @@ Page({
       },
       method: 'get',
       success: function(res) {
-        var json_array = JSON.parse(res.data).reverse()
+        json_array = JSON.parse(res.data).reverse()
         console.log(json_array)
         if (json_array.length > 0) {
           that.setData({
@@ -43,7 +43,7 @@ Page({
         } else if (json_array.length == 0) {
           json_array = [{
               "fields": {
-                "text": "没有搜索到相关数据"
+                "text": "没有搜索到相关数据..."
               }
             }, ],
             that.setData({

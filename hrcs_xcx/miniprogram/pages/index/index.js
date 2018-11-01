@@ -14,6 +14,15 @@ Page({
   onLoad: function(options) {
 
     var that = this;
+    var json_array = [{
+      "fields": {
+        "text": "正在载入数据..."
+      }
+    },];
+
+    that.setData({
+      msg_list: json_array
+    })
 
     var id_temp = 0
     var msg_list = []
@@ -21,7 +30,7 @@ Page({
       url: 'https://22465rj114.iask.in/notification_api/get_five/',
       method: 'get',
       success: function(res) {
-        var json_array = JSON.parse(res.data)
+        json_array = JSON.parse(res.data)
         console.log(json_array)
         id_temp = json_array[0].pk
         console.log(id_temp)

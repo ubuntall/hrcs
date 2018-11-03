@@ -42,3 +42,9 @@ def get_so(request):
     keyword = request.GET.get("keyword")
     json_data = serialize('json', Msg.objects.filter(Q(text__contains=keyword) | Q(actualNickName__contains=keyword)))
     return HttpResponse(json.dumps(json_data), content_type="application/json")
+
+
+def get_item_by_id(request):
+    id = request.GET.get("id")
+    json_data = serialize('json', Msg.objects.filter(id=id))
+    return HttpResponse(json.dumps(json_data), content_type="application/json")

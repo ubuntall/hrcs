@@ -1,0 +1,316 @@
+1542197396143	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.PpIOF3DDIVgg"
+1542197404625	Marionette	INFO	Listening on port 51797
+1542197405020	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript error: http://qrserver-vip.anjuke.com/login?appid=broker&guid=c792b80f84b118097160&t=1542197429095&callback=jQuery1110031823525616240866_1542197406296&_=1542197406298, line 1: TypeError: jQuery1110031823525616240866_1542197406296 is not a function
+JavaScript error: http://qrserver-vip.anjuke.com/login?appid=broker&guid=a4adeeb218c476746d68&t=1542197459976&callback=jQuery1110031823525616240866_1542197406296&_=1542197406300, line 1: TypeError: jQuery1110031823525616240866_1542197406296 is not a function
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/box-model.js, line 416: TypeError: quads is undefined
+JavaScript error: http://qrserver-vip.anjuke.com/login?appid=broker&guid=746d1b98efd2f542d7f9&t=1542197501444&callback=jQuery1110031823525616240866_1542197406296&_=1542197406301, line 1: TypeError: jQuery1110031823525616240866_1542197406296 is not a function
+JavaScript error: http://qrserver-vip.anjuke.com/login?appid=broker&guid=6bd897f06a9ca71a8290&t=1542197597098&callback=jQuery1110031823525616240866_1542197406296&_=1542197406302, line 1: TypeError: jQuery1110031823525616240866_1542197406296 is not a function
+JavaScript error: http://qrserver-vip.anjuke.com/login?appid=broker&guid=5a1c718ed9bb38bb419c&t=1542197607864&callback=jQuery1110031823525616240866_1542197406296&_=1542197406303, line 1: TypeError: jQuery1110031823525616240866_1542197406296 is not a function
+JavaScript error: http://qrserver-vip.anjuke.com/login?appid=broker&guid=84b193adf0b07258af50&t=1542197986946&callback=jQuery1110031823525616240866_1542197406296&_=1542197406320, line 1: TypeError: jQuery1110031823525616240866_1542197406296 is not a function
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 2709: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIAutoCompleteController.getStyleAt]
+JavaScript error: https://www.baidu.com/, line 668: ReferenceError: $ is not defined
+JavaScript error: https://www.baidu.com/, line 727: ReferenceError: $ is not defined
+JavaScript error: https://www.baidu.com/, line 725: ReferenceError: $ is not defined
+JavaScript error: https://www.baidu.com/, line 668: ReferenceError: $ is not defined
+JavaScript error: https://www.baidu.com/, line 727: ReferenceError: $ is not defined
+JavaScript error: https://www.baidu.com/, line 725: ReferenceError: $ is not defined
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_55e56a3.js, line 108: ReferenceError: $ is not defined
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/js/all_async_search_55e56a3.js, line 55: ReferenceError: $ is not defined
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/rabbit/exposure-click/main-1.0.6.js, line 556: unreachable code after return statement
+JavaScript warning: https://csdnimg.cn/rabbit/exposure-click/main-1.0.6.js, line 556: unreachable code after return statement
+JavaScript error: https://gh.bdstatic.com/static/gh/js/ll/mword.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: https://csdnimg.cn/release/phoenix/production/pc_wap_common-9e177e0136.js, line 2: TypeError: r[(r.length - 1)] is undefined
+JavaScript error: https://csdnimg.cn/release/phoenix/production/pc_wap_common-9e177e0136.js, line 2: TypeError: r[(r.length - 1)] is undefined
+JavaScript error: https://csdnimg.cn/release/phoenix/production/pc_wap_common-9e177e0136.js, line 2: TypeError: r[(r.length - 1)] is undefined
+JavaScript error: https://csdnimg.cn/release/phoenix/production/pc_wap_common-9e177e0136.js, line 2: TypeError: r[(r.length - 1)] is undefined
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-127895514-2, line 83: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-127895514-2, line 143: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-127895514-2, line 143: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-127895514-2, line 143: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-127895514-2, line 83: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-127895514-2, line 143: unreachable code after return statement
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/rabbit/exposure-click/main-1.0.6.js, line 556: unreachable code after return statement
+JavaScript warning: https://csdnimg.cn/rabbit/exposure-click/main-1.0.6.js, line 556: unreachable code after return statement
+JavaScript error: https://gh.bdstatic.com/static/gh/js/ll/mword.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-127895514-2, line 83: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-127895514-2, line 143: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-127895514-2, line 143: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-127895514-2, line 143: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-127895514-2, line 83: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-127895514-2, line 143: unreachable code after return statement
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 202: TypeError: this.win is null
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=selenium%20%E6%89%A7%E8%A1%8C%E9%A1%B5%E9%9D%A2%E6%97%B6%E9%97%B4&json=1&p=3&sid=1459_21098_22160&req=2&bs=getElementByClassName%20%E7%A9%BA%E6%A0%BC%20python&pbs=selenium%20%E6%89%A7%E8%A1%8C%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%AC&csor=15&pwd=selenium%20%E6%89%A7%E8%A1%8C%E9%A1%B5%E9%9D%A2shi%27jian&cb=jQuery11020517492109053475_1542198107456&_=1542198107551, line 1: TypeError: jQuery11020517492109053475_1542198107456 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=selenium%20%E6%89%A7%E8%A1%8C%E9%A1%B5%E9%9D%A2%E4%BA%8B%E4%BB%B6&json=1&p=3&sid=1459_21098_22160&req=2&bs=selenium%20%E6%89%A7%E8%A1%8C%E9%A1%B5%E9%9D%A2%E6%97%B6%E9%97%B4&pbs=selenium%20%E6%89%A7%E8%A1%8C%E9%A1%B5%E9%9D%A2%E6%97%B6%E9%97%B4&csor=15&pwd=selenium%20%E6%89%A7%E8%A1%8C%E9%A1%B5%E9%9D%A2shi%27jian&cb=jQuery11020517492109053475_1542198107456&_=1542198107562, line 1: TypeError: jQuery11020517492109053475_1542198107456 is not a function
+[Child 13956, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13956, Chrome_ChildThread] WARNING: pipe erroconsole.error: "Tried to send a 'tabDetached' event on an already destroyed actor 'frameTarget'"
+[Parent 9224, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 9224, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1542198678358	Marionette	INFO	Stopped listening on port 56211
+1542198769959	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.DA8QdWmfU5j1"
+1542198775769	Marionette	INFO	Listening on port 56851
+1542198775984	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+[Parent 5820, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4C0010,name=PHttpChannel::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+[Child 8612, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1542198807568	Marionette	INFO	Stopped listening on port 56851
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 15740, Chrome_ChildThread] WARNI1542198904758	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.leFpgL8xNt1c"
+1542198910845	Marionette	INFO	Listening on port 57426
+1542198911227	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+1542198956083	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.q101OPR8T7hR"
+1542198963210	Marionette	INFO	Listening on port 57637
+1542198963365	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1542199015664	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.z0ZoKheo7ewD"
+1542199022877	Marionette	INFO	Listening on port 57873
+1542199022987	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+console.error: "Tried to send a 'tabDetached' event on an already destroyed actor 'frameTarget'"
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 9292, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 9292, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1542199140363	Marionette	INFO	Stopped listening on port 57873
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542199143122	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.9ODHMM1K4XfA"
+1542199148989	Marionette	INFO	Listening on port 58316
+1542199149317	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+1542199351395	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.NarrTwfYpsMD"
+1542199361971	Marionette	INFO	Listening on port 59175
+[Child 14776, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14776, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1542199362071	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript error: http://qrserver-vip.anjuke.com/login?appid=broker&guid=3bd3d08af6ea13c94bf0&t=1542199367512&callback=jQuery111003480408293873992_1542199367232&_=1542199367233, line 1: TypeError: jQuery111003480408293873992_1542199367232 is not a function
+[Parent 6288, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1542199400644	Marionette	INFO	Stopped listening on port 59175
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 14472, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542199484193	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.rbsPLxNkttYA"
+1542199491357	Marionette	INFO	Listening on port 59741
+1542199491636	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+1542199549665	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.9TXc8Gw5yxXB"
+1542199558306	Marionette	INFO	Listening on port 60014
+1542199558483	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1542199588865	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.49iiHZtls4iN"
+1542199597866	Marionette	INFO	Listening on port 60179
+1542199598265	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+1542199664075	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.DkK9h5dnPs8k"
+1542199669606	Marionette	INFO	Listening on port 60451
+1542199669661	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+JavaScript error: http://qrserver-vip.anjuke.com/login?appid=broker&guid=43d4094edafaeb27acef&t=1542199674779&callback=jQuery1110011116523949117585_1542199674615&_=1542199674616, line 1: TypeError: jQuery1110011116523949117585_1542199674615 is not a function
+[Parent 9512, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1542199698656	Marionette	INFO	Stopped listening on port 60451
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 5864, Chrome_ChildThread] WARNING: pipe err1542199709792	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.BBqw3Oz12233"
+1542199715732	Marionette	INFO	Listening on port 60640
+1542199715748	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript error: http://qrserver-vip.anjuke.com/login?appid=broker&guid=0b5db0d29a03d9a998ed&t=1542199720498&callback=jQuery111006184736123834437_1542199720365&_=1542199720366, line 1: TypeError: jQuery111006184736123834437_1542199720365 is not a function
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript error: http://login.anjuke.com/login/verify?token=2fe655e8718c136a4f73ea92d888d696&source=1, line 1: SyntaxError: unexpected token: ':'
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+[Parent 9292, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 9292, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1542199769329	Marionette	INFO	Stopped listening on port 60640
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542199772622	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.71xdGuCXiAEv"
+1542199778174	Marionette	INFO	Listening on port 60906
+1542199778654	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+[Parent 16156, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1542199786812	Marionette	INFO	Stopped listening on port 60906
+[GPU 8224, Chrome_ChildT1542199804620	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.b42J6PNHrm2a"
+1542199810365	Marionette	INFO	Listening on port 61052
+1542199810857	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript error: http://qrserver-vip.anjuke.com/login?appid=broker&guid=15e7cffa459d7e2944a9&t=1542199815586&callback=jQuery11100546192021732527_1542199815417&_=1542199815418, line 1: TypeError: jQuery11100546192021732527_1542199815417 is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript error: http://login.anjuke.com/login/verify?token=163f9e4d0e1364a564a42e22113c21dd&source=1, line 1: SyntaxError: unexpected token: ':'
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+1542199853292	Marionette	INFO	Stopped listening on port 61052
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 11188, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1542199938307	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.avSg3wBUKKOo"
+1542199944831	Marionette	INFO	Listening on port 61655
+1542199945150	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+1542200021152	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.eeRxT8aSfaRI"
+1542200026927	Marionette	INFO	Listening on port 61971
+1542200026950	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1542200217335	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.Zl03LkLf8QTL"
+1542200223200	Marionette	INFO	Listening on port 62633
+1542200223571	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+1542200243917	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.7nBqNdGfJseK"
+1542200249797	Marionette	INFO	Listening on port 62766
+1542200250314	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1542200383700	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\gaoji\\AppData\\Local\\Temp\\rust_mozprofile.t0ud84d6zwUu"
+1542200389570	Marionette	INFO	Listening on port 63267
+1542200389869	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript error: http://qrserver-vip.anjuke.com/login?appid=broker&guid=1e6fd693dcb0ab6b4c1a&t=1542200394964&callback=jQuery111005186619269003324_1542200394749&_=1542200394750, line 1: TypeError: jQuery111005186619269003324_1542200394749 is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript error: http://login.anjuke.com/login/verify?token=d3412e20ae977aae944f39e9e0bbafd3&source=1, line 1: SyntaxError: unexpected token: ':'
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript warning: http://pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js, line 26502: unreachable code after return statement
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=x&json=1&p=3&sid=26524_1459_21086_27401_27377_26350_27509&req=2&csor=1&cb=jQuery110202526734445352762_1542200495414&_=1542200495417, line 1: TypeError: jQuery110202526734445352762_1542200495414 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=xm&json=1&p=3&sid=26524_1459_21086_27401_27377_26350_27509&req=2&csor=2&pwd=x&cb=jQuery110202526734445352762_1542200495414&_=1542200495418, line 1: TypeError: jQuery110202526734445352762_1542200495414 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=xms&json=1&p=3&sid=26524_1459_21086_27401_27377_26350_27509&req=2&csor=3&pwd=xm&cb=jQuery110202526734445352762_1542200495414&_=1542200495419, line 1: TypeError: jQuery110202526734445352762_1542200495414 is not a function
+[Child 8476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1542200517467	Marionette	INFO	Stopped listening on port 63267
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 11520, Chrome_ChildThread] WARNING
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

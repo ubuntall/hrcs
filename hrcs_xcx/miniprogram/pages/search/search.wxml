@@ -1,16 +1,21 @@
 <include src="../../wxSearchView/wxSearchView.wxml" />
 <scroll-view class="scroll">
-  <view class="classname"></view>
-  <block wx:for="{{msg_list}}" wx:key="*this">
-    <view class="item_view">
-      <text class="item" white-space:pre-wrap selectable="true">
-      <!-- {{item.fields.id}}
-      {{item.fields.actualNickName}}
-      {{item.fields.nickName}} -->
-      {{item.fields.text}}
-      </text>
-      <view class='line'></view>
-    </view>
 
+  <block wx:if="{{msg_list}}" wx:for="{{msg_list}}" wx:key="*item.pk">
+    <view class="block">
+      <view class="item_view">
+        <navigator url="../detail/detail?id={{item.pk}}">
+          <text data-text="{{item.fields.text}}" class="item" white-space:pre-line selectable="true"><!-- {{item.fields.id}}{{item.fields.actualNickName}}{{item.fields.nickName}} -->{{item.fields.text}}</text>
+        </navigator>
+      </view>
+      <view class="button-sp-area">
+        <button class="weui-btn mini-btn" type="default" size="mini" data-text="{{item.pk}}" bindtap='addToNode'>添加笔记</button>
+        <!-- <button class="btn_item_del" bindtap='deleteFromNote'>删除笔记</button> -->
+        <button class="weui-btn mini-btn" type="primary" size="mini" data-text="{{item.fields.text}}" bindtap="dailing">拨打电话</button>
+
+      </view>
+      <!-- <view class='line'></view> -->
+    </view>
   </block>
+
 </scroll-view>

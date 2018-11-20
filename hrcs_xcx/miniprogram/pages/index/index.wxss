@@ -2,24 +2,51 @@
 @import "../../wxSearchView/wxSearchView.wxss";
 
 page {
-  background: #f6f6f68a;
+  background: #eee;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  /* flex-direction: column;
+  justify-content: flex-start; */
 }
 
-.item_view {
-  margin: 0 20rpx 0 20rpx;
+.block {
+  margin: 0 0 20rpx 0;
+  padding: 20rpx;
+  background-color: #fff;
 }
 
 .item {
-  font-size: 36rpx;
-  line-height: 50rpx;
+  font-size: 32rpx;
+  line-height: 40rpx;
   word-break: break-all;
 }
 
-.line {
+/* .line {
   width: 100%;
-  margin-top: 20rpx;
+  margin: 20rpx 0 0 0;
   border: 1px #989898 solid;
+} */
+
+.button-sp-area {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
+
+/* .note-add {
+  background-color: lightblue;
+} */
+
+/* .btn_item_dailing{
+  font-size: 14px;
+  background-color: lightgreen
+}
+
+.btn_item_add{
+  font-size: 14px;
+  background-color: lightblue
+}
+
+.btn_item_del{
+  font-size: 14px;
+  background-color: lightcoral
+} */

@@ -1,0 +1,18 @@
+<include src="../../wxSearchView/wxSearchView.wxml" />
+<scroll-view class="scroll">
+  <block wx:for="{{msg_list}}" wx:key="*item.pk">
+    <view class="block">
+      <view data-text="{{item.fields.text}}" class="item_view" bindlongpress="longPress">
+        <text class="item" white-space:pre-line selectable="true"><!-- {{item.fields.id}} -->{{item.fields.actualNickName}}
+        {{item.fields.createTime}}<!-- {{item.fields.nickName}} -->
+        {{item.fields.text}}</text>
+      </view>
+      <view class='button-sp-area'>
+        <button class="weui-btn mini-btn" type="default" size="mini" data-text="{{item.pk}}" bindtap='addToNode'>添加笔记</button>
+        <button class="weui-btn mini-btn" type="primary" size="mini" data-text="{{item.fields.text}}" bindtap="dailing">拨打电话</button>
+
+        <!-- <button class="btn_delete_from_note" bindtap='deleteFromNote'>从笔记删除</button> -->
+      </view>
+    </view>
+  </block>
+</scroll-view>

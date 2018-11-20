@@ -1,0 +1,59 @@
+/**index.wxss**/
+@import "../../wxSearchView/wxSearchView.wxss";
+
+page {
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.block {
+  margin: 0 0 20rpx 0;
+  padding: 20rpx;
+  background-color: #fff;
+}
+
+/* .item_view {
+  margin: 0 20rpx 0 20rpx;
+} */
+
+.item {
+  font-size: 32rpx;
+  line-height: 40rpx;
+  word-break: break-all;
+}
+
+/* .line {
+  width: 100%;
+  margin: 20rpx 0 0 0;
+  border: 1px #989898 solid;
+} */
+
+.button-sp-area {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+/* .btn_list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20rpx;
+}
+
+.btn_item_dailing{
+  font-size: 14px;
+  background-color: lightgreen
+}
+
+.btn_item_add{
+  font-size: 14px;
+  background-color: lightblue
+}
+
+.btn_item_del{
+  font-size: 14px;
+  background-color: lightcoral
+} */

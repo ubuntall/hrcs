@@ -1,0 +1,57 @@
+/**index.wxss**/
+@import "../../wxSearchView/wxSearchView.wxss";
+
+page {
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.block {
+  margin: 0 0 20rpx 0;
+  padding: 20rpx;
+  background-color: #fff;
+}
+
+/* .item_view {
+  margin: 0 20rpx 0 20rpx;
+} */
+
+.item {
+  font-size: 32rpx;
+  line-height: 40rpx;
+  word-break: break-all;
+}
+
+/* .line {
+  width: 100%;
+  margin: 20rpx 0 0 0;
+  border: 1px #989898 solid;
+} */
+
+.button-sp-area {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+
+/* .btn_dailing {
+  background-color: lightgreen;
+  margin: 20rpx;
+  font-size: 15px;
+}
+
+.btn_add_to_note{
+  background-color: lightblue;
+  margin: 20rpx;
+  font-size: 15px;
+
+}
+
+.btn_delete_from_note{
+  background-color: lightcoral;
+  margin: 20rpx;
+  font-size: 15px;
+} */

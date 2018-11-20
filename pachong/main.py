@@ -316,8 +316,13 @@ def pachong_zongjia_min(url, keyWord):
     start = 1
     url_real = url + str(keyWord)
     print(url_real)
-    html = urllib.request.urlopen(quote(url_real, string.printable)).read()
-    html = html.decode("utf-8")
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64"
+    }
+    req = urllib.request.Request(quote(url_real, safe=string.printable), headers=headers)
+    response = urllib.request.urlopen(req)
+    html = response.read()
+    # print(html)
     soup = BeautifulSoup(html, 'html.parser')
     page_box = soup.find('div', class_="paging-box page-box house-lst-page-box")
     # print(page_box)
@@ -325,14 +330,20 @@ def pachong_zongjia_min(url, keyWord):
     all = soup.find_all('a')
     soup = BeautifulSoup(str(all[-2]), 'html.parser')
     end = soup.find('a').text.strip()
-    print(end)
+    # print(end)
     end = int(end) + 1
     # print(end)
 
     for i in range(start, end + 1):
         url_real = url + str(keyWord) + "&page=" + str(i)
-        print(url_real)
-        html = urllib.request.urlopen(quote(url_real, string.printable)).read()
+        print(quote(url_real, safe=string.printable))
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64"
+        }
+        req = urllib.request.Request(quote(url_real, safe=string.printable), headers=headers)
+        response = urllib.request.urlopen(req)
+        html = response.read()
+        # print(html)
         soup = BeautifulSoup(html, 'html.parser')
         house_list_wrap = soup.find('div', class_="list-wrap")
         soup = BeautifulSoup(str(house_list_wrap), 'html.parser')
@@ -340,65 +351,73 @@ def pachong_zongjia_min(url, keyWord):
         # print(all)
 
         for a in all:
-            # print(a)
+            # # print(a)
+            # a_soup = BeautifulSoup(str(a), 'html.parser')
+            # info_panel = a_soup.find('div', class_="info-panel")
+            # # print(info_panel)
+            # a_soup = BeautifulSoup(str(info_panel), 'html.parser')
+            # href = a_soup.find('a').attrs['href'].strip()
+            # house_url = "http://www.yongxinjia.com" + href
+            # # print(house_url)
+            # num = a_soup.find('span', class_="num").text.strip()
+            # print(str(num) + "万")
+            # price_pre = a_soup.find('div', class_="price-pre").text.strip()
+            # print(price_pre)
+            # j = j + 1
+            # sheet.put_cell(j, 0, 1, num, 0)
+            # sheet.put_cell(j, 1, 1, price_pre, 0)
+            # sheet.put_cell(j, 2, 1, house_url, 0)
+
             a_soup = BeautifulSoup(str(a), 'html.parser')
             info_panel = a_soup.find('div', class_="info-panel")
             # print(info_panel)
             a_soup = BeautifulSoup(str(info_panel), 'html.parser')
             href = a_soup.find('a').attrs['href'].strip()
-            house_url = "http://www.yongxinjia.com" + href
-            # print(house_url)
-            num = a_soup.find('span', class_="num").text.strip()
-            print(str(num) + "万")
-            price_pre = a_soup.find('div', class_="price-pre").text.strip()
-            print(price_pre)
-            j = j + 1
-            sheet.put_cell(j, 0, 1, num, 0)
-            sheet.put_cell(j, 1, 1, price_pre, 0)
-            sheet.put_cell(j, 2, 1, house_url, 0)
+            bianhao = href.strip("/").strip("/esf")
+            print(bianhao)
 
     wb = copy(book)
     wb.save(xlsfile)
 
 
-# url = "http://www.yongxinjia.com/esf?keyWord="
-# pachong_zongjia_min(url, "")
+url = "http://www.yongxinjia.com/esf?keyWord="
+pachong_zongjia_min(url, "南中旭日新城")
 
-def pachong_fjlyfdc(url, start, end):
-    global set
-    xlsfile = 'fjlyfdc.xls'
-    book = xlrd.open_workbook(xlsfile)
-    sheet_name = book.sheet_names()
-    print(sheet_name)
-    sheet = book.sheet_by_index(0)
-    nrows = sheet.nrows
-    ncols = sheet.ncols
-    print(nrows)
-    print(ncols)
-    j = -1
-    for i in range(start, end + 1):
-        url_real = url + str(i)
-        print(url_real)
-        html = urllib.request.urlopen(url_real).read()
-        soup = BeautifulSoup(html, 'html.parser')
-        table_responsive = soup.find('div', class_="table-responsive")
-        soup = BeautifulSoup(str(table_responsive), 'html.parser')
-        all = soup.find_all('tr')
-        del all[0]
-        # print(all)
-
-        for a in all:
-            a_soup = BeautifulSoup(str(a), 'html.parser')
-            td_all = a_soup.find_all('td')
-            name = td_all[0].text.strip()
-            num = td_all[1].text.strip()
-            j = j + 1
-            sheet.put_cell(j, 0, 1, name, 0)
-            sheet.put_cell(j, 1, 1, num, 0)
-
-    wb = copy(book)
-    wb.save(xlsfile)
-
-
-url = "http://www.fjlyfdc.com.cn/Html/CYZT/index/employee?pagenumber="
-pachong_fjlyfdc(url, 1, 114)
+# def pachong_fjlyfdc(url, start, end):
+#     global set
+#     xlsfile = 'fjlyfdc.xls'
+#     book = xlrd.open_workbook(xlsfile)
+#     sheet_name = book.sheet_names()
+#     print(sheet_name)
+#     sheet = book.sheet_by_index(0)
+#     nrows = sheet.nrows
+#     ncols = sheet.ncols
+#     print(nrows)
+#     print(ncols)
+#     j = -1
+#     for i in range(start, end + 1):
+#         url_real = url + str(i)
+#         print(url_real)
+#         html = urllib.request.urlopen(url_real).read()
+#         soup = BeautifulSoup(html, 'html.parser')
+#         table_responsive = soup.find('div', class_="table-responsive")
+#         soup = BeautifulSoup(str(table_responsive), 'html.parser')
+#         all = soup.find_all('tr')
+#         del all[0]
+#         # print(all)
+#
+#         for a in all:
+#             a_soup = BeautifulSoup(str(a), 'html.parser')
+#             td_all = a_soup.find_all('td')
+#             name = td_all[0].text.strip()
+#             num = td_all[1].text.strip()
+#             j = j + 1
+#             sheet.put_cell(j, 0, 1, name, 0)
+#             sheet.put_cell(j, 1, 1, num, 0)
+#
+#     wb = copy(book)
+#     wb.save(xlsfile)
+#
+#
+# url = "http://www.fjlyfdc.com.cn/Html/CYZT/index/employee?pagenumber="
+# pachong_fjlyfdc(url, 1, 114)

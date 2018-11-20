@@ -4,3 +4,35 @@ http://22465rj114.iask.in/admin/login/
 chrome://settings/content/notifications
 python manage.py collectstatic
 https://22465rj114.iask.in/admin/msg2db/msg/?q=
+
+ALTER TABLE msg2db_msg CONVERT TO CHARACTER SET utf8;
+alter table msg2db_msg convert to character set utf8mb4 collate utf8mb4_unicode_ci;
+ALTER DATABASE hrcs_django CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'talltall';
+
+ALTER DATABASE hrcs_django CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE msg2db_msg CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE msg2db_msg  MODIFY `text` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
+SET NAMES utf8mb4;
+SET @@GLOBAL.sql_mode="NO_ENGINE_SUBSTITUTION";
+
+ALTER TABLE msg2db_msg CHANGE text text VARCHAR(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+1 # 修改数据库:
+2 ALTER DATABASE database_name CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
+3 # 修改表:
+4 ALTER TABLE table_name CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+5 # 修改表字段:
+6 ALTER TABLE table_name CHANGE column_name column_name VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+ 1 [client]
+ 2 default-character-set = utf8mb4
+ 3
+ 4 [mysql]
+ 5 default-character-set = utf8mb4
+ 6
+ 7 [mysqld]
+ 8 character-set-client-handshake = FALSE
+ 9 character-set-server = utf8mb4
+10 collation-server = utf8mb4_unicode_ci
+11 init_connect='SET NAMES utf8mb4'

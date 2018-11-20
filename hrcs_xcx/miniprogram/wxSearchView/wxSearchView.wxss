@@ -1,26 +1,31 @@
 /** 整个区域 */
-.weui-search-bar{
+
+.weui-search-bar {
   position: fixed;
 }
 
-.wxSearch{
+.wxSearch {
+  display: block;
   position: absolute;
-  top: 43px;
+  top: 45px;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: fit-content;
+  height: fit-content;
   border-top: 1px #eee solid;
-  background-color: rgba(200, 200, 200, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: #fff; */
   z-index: 9999;
 }
 
 /** 搜索框下面的提示区域 */
-.wxSearchInner{
+
+.wxSearchInner {
   background-color: #fff;
 }
 
 /** 搜索热点标题 */
-.wxSearchTitle{
+
+.wxSearchTitle {
   display: block;
   padding: 10px 5px 5px 10px;
   font-size: 13px;
@@ -28,16 +33,19 @@
 }
 
 /** 提示样式 */
-.wxSearchMindKeyItem{
-  padding: 10px 5px 10px 15px;
+
+.wxSearchMindKeyItem {
+  padding: 10px 15px 10px 15px;
   margin-left: 10px;
+  margin-right: 10px;
   border-bottom: 1px solid #eee;
   display: flex;
   font-size: 13px;
 }
 
 /** 标签样式 */
-.wxSearchKeyList{
+
+.wxSearchKeyList {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -45,7 +53,8 @@
 }
 
 /** 标签样式 */
-.wxSearchKeyItem{
+
+.wxSearchKeyItem {
   flex: 0 0 18%;
   font-size: 13px;
   text-align: center;
@@ -57,7 +66,8 @@
 }
 
 /** 搜索记录标题栏 */
-.wxSearchHistoryItem{
+
+.wxSearchHistoryItem {
   padding-left: 10px;
   padding-top: 10px;
   padding-right: 5px;
@@ -66,17 +76,19 @@
 }
 
 /** 搜索记录标题 */
-.wxSearchHistoryItemTitle{
+
+.wxSearchHistoryItemTitle {
   flex: 8;
   font-size: 13px;
 }
 
 /** 搜索记录删除按钮 */
-.wxSearchHistoryItemDel{
+
+.wxSearchHistoryItemDel {
   flex: 1;
   font-size: 13px;
   text-align: center;
-  padding-top:2px;
+  padding-top: 2px;
   padding-bottom: 2px;
   border: 1px solid #eee;
   border-radius: 2px;
